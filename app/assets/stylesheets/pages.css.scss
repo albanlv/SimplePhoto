@@ -1,0 +1,35 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#player
+{
+	margin-top: 30px;
+  margin-left: 150px;
+}
+
+.cv{
+  font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-left: 200px;
+  line-height: 2px;
+}
+
+#contact{
+  margin-top: 220px;
+  margin-left: 350px;
+}
+
+#nav_film{
+  margin-right:270px;
+  float: right;
+}
+
+#LV{
+  width: 764px;
+  height: 454px;
+  border: 1px solid black;
+}
+
+.grey{
+  color: #666;
+}

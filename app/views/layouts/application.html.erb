@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rémi Guénaire</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <%= javascript_include_tag( "/assets/galleria/galleria-1.2.5.min.js") %>
+  <%= javascript_include_tag("/assets/galleria/themes/classic/galleria.classic.min.js") %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div id="logo">
+	    <%= link_to image_tag("/assets/logo.jpg"), :controller => 'home', :action => 'index' %>
+    <div/>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span2">
+        <nav>
+        <ul>
+
+          <li class="top cont-pro"><span class="sub-level">PROJECTS</span>
+          <ul class="pro">
+            <li><span class="sub-level">FILM</span>
+            <ul class="film">
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'films_commercial' %></li>
+              <li><%= link_to 'SHORTS', :controller => 'pages', :action => 'films_shorts' %></li>
+            </ul>
+            </li>
+
+            <li><span class="sub-level">PHOTOS</span>
+            <ul class="film">
+              <li><%= link_to 'WOMEN', :controller => 'pages', :action => 'women' %></li>
+              <li><%= link_to 'MEN', :controller => 'pages', :action => 'men' %></li>
+            </ul>
+            </li>
+          </ul> 
+          </li> 
+          <li class="top cont-con"><span>COLLABORATIONS</span>
+          <ul class="pre">
+            <li><span class="sub-level">FILM</span>
+            <ul class="film">
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'coll_films_commercial' %></li>
+              <li><%= link_to 'SHORTS/EDITORIAL', :controller => 'pages', :action => 'coll_films_shorts' %></li>
+            </ul>
+            </li>
+
+            <li><span class="sub-level">PHOTOS</span>
+            <ul class="film">
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'photos_commercial' %></li>
+              <li><%= link_to 'EDITORIAL', :controller => 'pages', :action => 'photos_editorial' %></li>
+            </ul>
+            </li>
+          </ul> 
+          </li>
+          <li class="active"><%= link_to 'CONTACT', :controller => 'pages', :action => 'contact' %></li>
+        </ul>
+        </nav>
+      </div>
+      <div class="span10">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

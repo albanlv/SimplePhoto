@@ -1,0 +1,111 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
+//
+// Example:
+
+@linkColor: #000;
+@baseFontFamily: 'Open Sans', Helvetica, Arial, sans-serif;
+@baseFontSize: 17px;
+@NavbarText: @grayLighter;
+@navbarHeight:   40px;    
+@navbarBackground: @white;    
+@navbarBackgroundHighlight: @white;     
+@navbarText:     @grayLight;  
+@navbarLinkColor:    @grayLight;  
+@navbarLinkColorHover;   @grayLighter;
+
+a{
+  text-decoration: none;
+}
+
+
+/* navigation bar */
+nav {
+  margin-top: 0px;
+  margin-left: 13px;
+  color: #777;
+  font-size: .7em;
+  line-height: 1em;
+}
+nav em {
+  text-transform: lowercase ;
+}
+nav .top {
+  padding-bottom: 1em;
+}
+nav .top > a:link, nav .top > a:visited { /* this rule and the next one are for collaborations and contacts links in the menu */
+color: #777;
+}
+nav .top > a:hover, nav .top > a:active {
+color: #555;
+}
+nav .top > span:hover { /* this rule is for the project and press links in the menu */
+color: #555;
+cursor: pointer;
+}
+nav .top ul { 
+    padding-top: .2em;
+}
+nav .top-active {
+color: #555
+}
+
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+nav ul ul { /* setting rules for sub-ul (projects categories) */
+color: #aaa;
+width: 100%;
+}
+nav .pro ul {
+    padding-bottom: .5em;
+}
+nav ul ul.mob { /* last sub-ul doesn't need padding cause uses the super-ul one */
+    padding-bottom: 0; 
+} 
+
+nav ul ul ul li { /* names of projects */
+    margin-left: 1em;
+    margin-bottom: .3em;
+    font-size: .95em;
+color: #ccc;
+       /*text-transform: none;*/
+}
+nav li a:link, nav li a:visited  { /* links appearence for projects */
+color: #777;
+       text-decoration: none;
+}
+nav li.active-pro { /* appearence for active projects in the menu */
+color: #aaa;
+       text-decoration: none;
+}
+nav li a:hover {
+color: #aaa;
+       text-decoration: none;
+}
+nav li a:active {
+color: #777;
+       text-decoration: none;
+}
+span.sub-level { /* styling the non-link super-li  */
+cursor: pointer;
+}
+.pro li {
+cursor: default;
+}
+li.top ul span:hover {
+color: #777;
+}
