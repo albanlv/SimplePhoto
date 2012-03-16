@@ -32,15 +32,15 @@
           <ul class="pro">
             <li><span class="sub-level">FILM</span>
             <ul class="film">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'films_commercial' %></li>
-              <li><%= link_to 'SHORTS', :controller => 'pages', :action => 'films_shorts' %></li>
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'films_commercial', :remote => true %></li>
+              <li><%= link_to 'SHORTS', :controller => 'pages', :action => 'films_shorts', :remote => true  %></li>
             </ul>
             </li>
 
             <li><span class="sub-level">PHOTOS</span>
             <ul class="film">
-              <li><%= link_to 'WOMEN', :controller => 'pages', :action => 'women' %></li>
-              <li><%= link_to 'MEN', :controller => 'pages', :action => 'men' %></li>
+              <li><%= link_to 'WOMEN', :controller => 'pages', :action => 'women', :remote => true  %></li>
+              <li><%= link_to 'MEN', :controller => 'pages', :action => 'men', :remote => true  %></li>
             </ul>
             </li>
           </ul> 
@@ -49,20 +49,20 @@
           <ul class="pre">
             <li><span class="sub-level">FILM</span>
             <ul class="film">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'coll_films_commercial' %></li>
-              <li><%= link_to 'SHORTS/EDITORIAL', :controller => 'pages', :action => 'coll_films_shorts' %></li>
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'coll_films_commercial', :remote => true  %></li>
+              <li><%= link_to 'SHORTS/EDITORIAL', :controller => 'pages', :action => 'coll_films_shorts', :remote => true  %></li>
             </ul>
             </li>
 
             <li><span class="sub-level">PHOTOS</span>
             <ul class="film">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'photos_commercial' %></li>
-              <li><%= link_to 'EDITORIAL', :controller => 'pages', :action => 'photos_editorial' %></li>
+              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'photos_commercial', :remote => true  %></li>
+              <li><%= link_to 'EDITORIAL', :controller => 'pages', :action => 'photos_editorial', :remote => true  %></li>
             </ul>
             </li>
           </ul> 
           </li>
-          <li class="active"><%= link_to 'CONTACT', :controller => 'pages', :action => 'contact' %></li>
+          <li class="active"><%= link_to 'CONTACT', :controller => 'pages', :action => 'contact', :remote => true  %></li>
         </ul>
         </nav>
       </div>
