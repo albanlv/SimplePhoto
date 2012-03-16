@@ -12,6 +12,9 @@ class PagesController < ApplicationController
   def films_commercial
   end
 
+  def films_commercial0
+  end
+
   def films_commercial1
   end
 
