@@ -10,7 +10,6 @@ $(document).ready(function() {
     $(".top > span").click(function () {
         $(this).parent().toggleClass("slide");
         $(".slide > ul").slideToggle("slow");
-        $(".slide ul ul").slideUp(); /* sub-sub list slide up */
         $(this).parent().toggleClass("slide");
     });
     $(".top li span").click(function () {
