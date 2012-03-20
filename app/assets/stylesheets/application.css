@@ -14,7 +14,12 @@
 }
 
 .sub-level{
-  color: #666}
+  color: #666
+}
+
+.res{
+  display: block;
+}
 
 .film{
   color: #333}
