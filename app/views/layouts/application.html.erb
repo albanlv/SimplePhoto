@@ -32,8 +32,8 @@
           <ul class="pro" style="display:block;">
             <li><span class="sub-level" style="display:block;">FILM</span>
             <ul class="res" style="display:block;">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'films_commercial', :remote => true %></li>
-              <li><%= link_to 'SHORTS', :controller => 'pages', :action => 'films_shorts', :remote => true  %></li>
+              <li><%= link_to 'COMMERCIAL',{ :controller => 'pages', :action => 'films_commercial'}, :remote => true  %></li>
+              <li><%= link_to 'SHORTS',{:controller => 'pages', :action => 'films_shorts'}, :remote => true %></li>
             </ul>
             </li>
 
