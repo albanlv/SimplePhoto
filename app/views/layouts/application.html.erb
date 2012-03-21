@@ -7,12 +7,12 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
   <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag    "application" %>
+
   <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <%= javascript_include_tag( "/assets/galleria/galleria-1.2.5.min.js") %>
-  <%= javascript_include_tag("/assets/galleria/themes/classic/galleria.classic.min.js") %>
+  <%= csrf_meta_tag %>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -32,13 +32,13 @@
           <ul class="pro" style="display:block;">
             <li><span class="sub-level" style="display:block;">FILM</span>
             <ul class="res" style="display:block;">
-              <li><%= link_to 'COMMERCIAL',{ :controller => 'pages', :action => 'films_commercial'}, :remote => true  %></li>
-              <li><%= link_to 'SHORTS',{:controller => 'pages', :action => 'films_shorts'}, :remote => true %></li>
+              <li><%= link_to 'COMMERCIAL', pages_films_commercial_path, remote: true, 'data-type' => :html %></li>
+              <li><%= link_to 'SHORTS', pages_films_shorts, remote: true, 'data-type' => :html %></li>
             </ul>
             </li>
 
             <li><span class="sub-level">PHOTOS</span>
-            <ul class="res">
+            <ul class="bur">
               <li><%= link_to 'WOMEN', :controller => 'pages', :action => 'women', :remote => true  %></li>
               <li><%= link_to 'MEN', :controller => 'pages', :action => 'men', :remote => true  %></li>
             </ul>
@@ -46,7 +46,7 @@
           </ul> 
           </li> 
           <li class="top cont-con"><span>COLLABORATIONS</span>
-          <ul class="res">
+          <ul class="con">
             <li><span class="sub-level">FILM</span>
             <ul class="film">
               <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'coll_films_commercial', :remote => true  %></li>
@@ -67,7 +67,9 @@
         </nav>
       </div>
       <div class="span10">
-        <%= yield %>
+        <div id="content">
+          <%= yield %>
+        </div>
       </div>
     </div>
   </div>
