@@ -1,4 +1,13 @@
 class PagesController < ApplicationController
+  respond_to :html, :js
+
+  layout :get_layout
+
+  def get_layout
+    request.xhr? ? nil : 'application'
+  end
+  
+    
 
   def women
   end

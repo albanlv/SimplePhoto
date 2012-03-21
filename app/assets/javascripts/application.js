@@ -7,6 +7,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require jquery.blueberry
+//= require galleria-1.2.5.min 
+//= require galleria.classic.min
 //= require navigation
+//= require content
 //= require_tree .
 //= require_self
+
+jQuery(function($) {
+    // Callback for rendering via HTML
+    $('nav a[data-type=html]').on('ajax:success', function(event, data, status, xhr) {
+        $('#content').html(data);
+    });
+});
