@@ -7,4 +7,4 @@ tmp/
 test
 spec
 doc
-public/assets/images/*
+public/assets/*
