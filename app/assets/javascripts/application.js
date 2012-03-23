@@ -20,4 +20,10 @@ jQuery(function($) {
     $('nav a[data-type=html]').on('ajax:success', function(event, data, status, xhr) {
         $('#content').html(data);
     });
+
+    $("#gallery").galleria({
+        width: 984,
+        height: 654,
+        autoplay: 4000
+    });
 });
