@@ -37,8 +37,8 @@
 
             <li><span class="sub-level">PHOTOS</span>
             <ul class="bur">
-              <li><%= link_to 'WOMEN', :controller => 'pages', :action => 'women', :remote => true  %></li>
-              <li><%= link_to 'MEN', :controller => 'pages', :action => 'men', :remote => true  %></li>
+              <li><%= link_to 'WOMEN', pages_women_path, :remote => true, 'data-type' => :html  %></li>
+              <li><%= link_to 'MEN', pages_men_path, :remote => true, 'data-type' => :html  %></li>
             </ul>
             </li>
           </ul> 
@@ -47,20 +47,20 @@
           <ul class="con">
             <li><span class="sub-level">FILM</span>
             <ul class="film">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'coll_films_commercial', :remote => true  %></li>
-              <li><%= link_to 'SHORTS/EDITORIAL', :controller => 'pages', :action => 'coll_films_shorts', :remote => true  %></li>
+              <li><%= link_to 'COMMERCIAL', pages_coll_films_commercial_path, :remote => true, 'data-type' => :html  %></li>
+              <li><%= link_to 'SHORTS/EDITORIAL', pages_coll_films_shorts_path, :remote => true, 'data-type' => :html  %></li>
             </ul>
             </li>
 
             <li><span class="sub-level">PHOTOS</span>
             <ul class="res">
-              <li><%= link_to 'COMMERCIAL', :controller => 'pages', :action => 'photos_commercial', :remote => true  %></li>
-              <li><%= link_to 'EDITORIAL', :controller => 'pages', :action => 'photos_editorial', :remote => true  %></li>
+              <li><%= link_to 'COMMERCIAL', pages_photos_commercial_path, :remote => true, 'data-type' => :html %></li>
+              <li><%= link_to 'EDITORIAL', pages_photos_editorial_path, :remote => true, 'data-type' => :html  %></li>
             </ul>
             </li>
           </ul> 
           </li>
-          <li class="active"><%= link_to 'CONTACT', :controller => 'pages', :action => 'contact', :remote => true  %></li>
+          <li class="active"><%= link_to 'CONTACT', pages_contact_path, :remote => true  %></li>
         </ul>
         </nav>
       </div>
