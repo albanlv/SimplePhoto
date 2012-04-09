@@ -1,10 +1,6 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#player
-{
-  margin-left: 120px;
-}
 
 .cv{
   font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
@@ -35,6 +31,8 @@
 }
 
 #player{
+  margin-top: 15px;
+  margin-left: 120px;
   font-size: .7em;
 }
 #top_logo{
