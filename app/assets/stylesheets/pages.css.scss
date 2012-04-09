@@ -4,9 +4,17 @@
 
 .cv{
   font-family: 'Gill Sans', Helvetica, Arial, sans-serif;
-  font-size: .7em;
+  font-size: .9em;
   margin-left: 200px;
   line-height: 2px;
+}
+
+.cv h3 {
+  font-size: .9em;
+}
+
+.cv p {
+  font-size: .9em;
 }
 
 #contact{
@@ -27,8 +35,15 @@
 }
 
 .grey{
-  color: #666;
+  color: #d3d3d3;
 }
+.black{
+  color: black;
+}
+.stronggrey{
+  color: #999999;
+}
+
 
 #player{
   margin-top: 15px;
