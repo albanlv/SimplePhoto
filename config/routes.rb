@@ -20,6 +20,7 @@ Remiguenaire::Application.routes.draw do
   get "pages/coll_films_commercial2"
 
   get "pages/coll_films_shorts"
+  get "pages/coll_films_shorts0"
 
   get "pages/coll_films_shorts1"
   

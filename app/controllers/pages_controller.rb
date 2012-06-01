@@ -42,6 +42,9 @@ class PagesController < ApplicationController
   def coll_films_shorts
   end
 
+  def coll_films_shorts0
+  end
+
   def coll_films_shorts1
   end
 
